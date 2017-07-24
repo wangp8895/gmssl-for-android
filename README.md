@@ -1,13 +1,13 @@
 # gmssl-for-android
 Android平台下编译gmssl静态库
 
-##已验证通过的编译环境
+## 已验证通过的编译环境
 - android-ndk-r13
 - 最新的[gmssl][1]代码 **截止到20170724**
 
-##使用
+## 使用
 
-###设置环境变量
+### 设置环境变量
 打开终端，
 ```
 gredit ~/.profile
@@ -23,7 +23,7 @@ gredit ./tools/_shared.sh
 `NDK=${ANDROID_NDK}`
 
 
-###编译
+### 编译
 终端执行
 ~~~
 cd tools
@@ -38,7 +38,7 @@ sh ./build-gmssl4android.sh android-mips64 #mips64
 
 成功后输出在./output目录下，其中有include头文件和libcrypto.a/libssl.a
 
-##参考
+## 参考
 1. [openssl-for-ios-and-android][2]
 
 

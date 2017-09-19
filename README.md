@@ -38,6 +38,23 @@ sh ./build-gmssl4android.sh android-mips64 #mips64
 
 成功后输出在./output目录下，其中有include头文件和libcrypto.a/libssl.a
 
+
+# gmssl-for-ios
+ios平台下编译gmssl静态库
+
+## 已验证通过的编译环境
+- ios10.3 sdk
+- 最新的[gmssl][1]代码 **截止到20170919**
+
+## 使用
+打开终端
+~~~
+cd tools
+sh ./build-gmssl4ios.sh  #"arm64" "armv7s" "armv7" "i386" "x86_64"
+~~~
+
+成功后输出在./output目录下，其中各个ARCH的.a和include头文件，还有合并后的通用库gmssl-universal
+
 ## 参考
 1. [openssl-for-ios-and-android][2]
 
